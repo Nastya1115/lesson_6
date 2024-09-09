@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog</title>
+</head>
+<body>
+    
+    {%for blog in blogs_list%}
+
+        <p>{{blog.title}}<br>
+        {{blog.published_date}}</p>
+
+    {%endfor%}
+
+</body>
+</html>
