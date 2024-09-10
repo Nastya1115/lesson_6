@@ -7,7 +7,7 @@
     
     {%for blog in blogs_list%}
 
-        <p>{{blog.title}}<br>
+        <p><a href="/post/{{blog.id}}">{{blog.title}}</a><br>
         {{blog.published_date}}</p>
 
     {%endfor%}

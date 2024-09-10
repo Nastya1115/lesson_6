@@ -15,3 +15,16 @@ def blogs_list(request):
         template_name="post_list.html",
         context=context
     )
+
+def post_show(request, post_id):
+    post_obj = Post.objects.get(id=post_id)
+    print(post_obj)
+    context = {
+        "post_obj": post_obj,
+    }
+
+    return render(
+        request,
+        template_name="post_show.html",
+        context=context,
+    )
